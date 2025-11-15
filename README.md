@@ -89,6 +89,7 @@ COTE/
 | [README.md](./README.md) | 프로젝트 소개 및 빠른 시작 | 처음 사용자 |
 | [SOLVING_LOG.md](./SOLVING_LOG.md) | 날짜별 문제 풀이 기록 | 진행 상황 추적 |
 | [SKILL_ANALYSIS.md](./SKILL_ANALYSIS.md) | 알고리즘별 강/약점 분석 | 학습 방향 설정 |
+| [LEARNING_NOTES.md](./LEARNING_NOTES.md) | 학습 노트 및 개념 정리 | 복습 및 참고 |
 | [LLM_CONTEXT.md](./LLM_CONTEXT.md) | AI 문제 추천 가이드 | AI 어시스턴트용 |
 
 ---

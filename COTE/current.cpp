@@ -4,7 +4,44 @@
 #include <vector>
 using namespace std;
 
-//Bottom-Up 방식
+// 백트래킹 (Backtracking)
+// 핵심 3단계: 선택(Choice) → 탐색(Explore) → 복구(Undo)
+//
+// 문제: 1~N 중에서 중복 없이 M개를 고른 수열 출력
+//
+// 사고 과정 (트리 구조):
+//           시작
+//      /     |     \
+//     1      2      3     ← 첫 번째 선택
+//    / \    / \    / \
+//   2   3  1   3  1   2   ← 두 번째 선택 (이미 선택한 숫자 제외)
+//
+// visited 배열: 이미 사용한 숫자 체크
+// arr 배열: 선택한 숫자를 순서대로 저장
+// depth: 현재까지 선택한 개수
+
+void solve(int* arr, bool* visited,int N, int M, int depth)
+{
+    if (depth == M)
+    {
+        for (int i=0;i<M;i++)
+        {
+            cout << arr[i] << " ";
+        }
+        cout << '\n';
+        return;
+    }
+
+    for (int i=1;i<=N;i++)
+    {
+        if (visited[i])
+            continue;
+        visited[i] = true;
+        arr[depth] = i;
+        solve(arr, visited, N, M, depth + 1);
+        visited[i] = false;
+    }
+}
 
 int main()
 {
@@ -12,72 +49,13 @@ int main()
     cin.tie(nullptr);
     cout.tie(nullptr);
 
-    int N;
-    cin >> N;
+    int N, M;
+    cin >> N >> M;
 
-    vector<int> DP(N+1);
+    int arr[10] = {0};
+    bool visited[10] = {false};
+
+    solve(arr, visited, N, M, 0);
     
-    for (int i=2;i<=N;i++)
-    {
-        //3번째 연산 : 1을 뺀다
-        DP[i] = DP[i-1] + 1;
-
-        if (i%2==0)
-        {
-            //2번째 연산: 2로 나누어 떨어지면 2로 나눈다.
-            // i/2는 자기자신을 2로 나눈애니까 반대로 생각하면
-            // 자기자신을 2로 나누면 해당 값이 될 수 있는거
-            DP[i] = min(DP[i], DP[i/2]+1);
-        }
-        if (i%3 == 0)
-        {
-            DP[i] = min(DP[i], DP[i/3]+1);
-        }
-    }
-    cout << DP[N];
-   
     return 0;
 }
-
-// Top-Down 방식 (재귀 사용, 메모이제이션 방식)
-// int DP[1000001] = {0,};
-//
-// void MakeOne(int num, int count)
-// {
-//     if (num == 0)
-//         return;
-//
-//     if (DP[num]!=0 && DP[num] < count)
-//     {
-//         return;
-//     }
-//     
-//     DP[num] = count;
-//     
-//     if (num %3 ==0)
-//     {
-//         MakeOne(num/3, count+1);
-//     }
-//
-//     if (num%2==0)
-//     {
-//         MakeOne(num/2, count+1);
-//     }
-//
-//     MakeOne(num-1, count+1);
-// }
-//
-// int main()
-// {
-//     ios::sync_with_stdio(false);
-//     cin.tie(nullptr);
-//     cout.tie(nullptr);
-//
-//     int N;
-//     cin >> N;
-//     MakeOne(N, 0);
-//     cout << DP[1];
-//    
-//     return 0;
-// }
-
