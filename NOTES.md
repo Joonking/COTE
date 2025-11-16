@@ -189,6 +189,6 @@ v2.assign(5, -1);  // {-1, -1, -1, -1, -1}
 ---
 
 **관련 문서**:
-- [SOLVING_LOG.md](./SOLVING_LOG.md) - 문제 풀이 기록
-- [SKILL_ANALYSIS.md](./SKILL_ANALYSIS.md) - 실력 분석
-- [LLM_CONTEXT.md](./LLM_CONTEXT.md) - AI 추천 가이드
+- [LOG.md](./LOG.md) - 문제 풀이 기록
+- [SKILL.md](./SKILL.md) - 실력 분석
+- [FOR_LLM.md](./FOR_LLM.md) - AI 추천 가이드

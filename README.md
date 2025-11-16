@@ -3,7 +3,7 @@
 > C++을 사용한 체계적인 코딩테스트 학습 및 문제 풀이 아카이브 프로젝트
 
 [![C++](https://img.shields.io/badge/C++-20-blue.svg)](https://isocpp.org/)
-[![Problems](https://img.shields.io/badge/Solved-1165+-green.svg)](./SOLVING_LOG.md)
+[![Problems](https://img.shields.io/badge/Solved-1165+-green.svg)](./LOG.md)
 [![Rider](https://img.shields.io/badge/IDE-Rider-orange.svg)](https://www.jetbrains.com/rider/)
 
 **현재 진행도**: 중급 레벨 | 1,165+ 문제 풀이 완료
@@ -24,9 +24,9 @@
 ```
 COTE/
 ├── 📄 README.md              # 프로젝트 소개 (이 파일)
-├── 📄 SOLVING_LOG.md         # 날짜별 문제 풀이 기록
-├── 📄 SKILL_ANALYSIS.md      # 알고리즘별 실력 분석
-├── 📄 LLM_CONTEXT.md         # AI 문제 추천 가이드
+├── 📄 LOG.md                 # 날짜별 문제 풀이 기록
+├── 📄 SKILL.md               # 알고리즘별 실력 분석
+├── 📄 FOR_LLM.md             # AI 문제 추천 가이드
 │
 └── COTE/
     ├── current.cpp           # 현재 풀고 있는 문제
@@ -38,7 +38,7 @@ COTE/
             └── ByAlgorithm/  # DP, DFS/BFS, 그리디 등
 ```
 
-**전체 구조는**: [상세 폴더 구조 보기](./LLM_CONTEXT.md#디렉토리-구조)
+**전체 구조는**: [상세 폴더 구조 보기](./FOR_LLM.md#디렉토리-구조)
 
 ## 🚀 빠른 시작
 
@@ -60,7 +60,7 @@ COTE/
 문제 풀이 완료 → archive/BaekJoon/ByNumber/1463_1로만들기.cpp
 ```
 
-**자세한 사용법**: 프로젝트를 처음 시작한다면 [사용 가이드](./LLM_CONTEXT.md)를 참고하세요.
+**자세한 사용법**: 프로젝트를 처음 시작한다면 [사용 가이드](./FOR_LLM.md)를 참고하세요.
 
 ---
 
@@ -78,7 +78,7 @@ COTE/
 - **이분탐색** (4개 → 목표 20개)
 - **백트래킹** (2개 → 목표 15개)
 
-**상세 분석**: [SKILL_ANALYSIS.md](./SKILL_ANALYSIS.md) | **풀이 기록**: [SOLVING_LOG.md](./SOLVING_LOG.md)
+**상세 분석**: [SKILL.md](./SKILL.md) | **풀이 기록**: [LOG.md](./LOG.md)
 
 ---
 
@@ -87,10 +87,10 @@ COTE/
 | 문서 | 설명 | 대상 |
 |------|------|------|
 | [README.md](./README.md) | 프로젝트 소개 및 빠른 시작 | 처음 사용자 |
-| [SOLVING_LOG.md](./SOLVING_LOG.md) | 날짜별 문제 풀이 기록 | 진행 상황 추적 |
-| [SKILL_ANALYSIS.md](./SKILL_ANALYSIS.md) | 알고리즘별 강/약점 분석 | 학습 방향 설정 |
-| [LEARNING_NOTES.md](./LEARNING_NOTES.md) | 학습 노트 및 개념 정리 | 복습 및 참고 |
-| [LLM_CONTEXT.md](./LLM_CONTEXT.md) | AI 문제 추천 가이드 | AI 어시스턴트용 |
+| [LOG.md](./LOG.md) | 날짜별 문제 풀이 기록 | 진행 상황 추적 |
+| [SKILL.md](./SKILL.md) | 알고리즘별 강/약점 분석 | 학습 방향 설정 |
+| [NOTES.md](./NOTES.md) | 학습 노트 및 개념 정리 | 복습 및 참고 |
+| [FOR_LLM.md](./FOR_LLM.md) | AI 문제 추천 가이드 | AI 어시스턴트용 |
 
 ---
 
