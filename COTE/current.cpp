@@ -18,7 +18,7 @@ void solve(int num, int depth)
         {
             cout << arr[i] << " ";
         }
-        cout << endl;
+        cout << '\n';
         return;
     }
     
